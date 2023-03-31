@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar 4 notas;
+            //si la nota promedio es mayor a 10 mostrar el mensaje “APROBADO”, de lo contrario“DESAPROBADO”.
+            int n1, n2, n3, n4;
+            Console.WriteLine("Ingrese su nota numero 1");
+            n1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese su nota numero 2");
+            n2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese su nota numero 3");
+            n3 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese su nota numero 4");
+            n4 = int.Parse(Console.ReadLine());
+
+            int promedio = (n1 + n2 + n3 + n4) / 4;
+
+            if (promedio >10) 
+            {
+                Console.WriteLine("APROBADO");
+            }
+            else
+            {
+                Console.WriteLine("DESAPROBADO");
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
