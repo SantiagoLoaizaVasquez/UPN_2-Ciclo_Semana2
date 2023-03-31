@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar la carrera profesional,
+            //si la carrera es igual a “sistemas” mostrar el mensaje “BIENVENIDO A LAFACULTAD DE INGENIERÍA”
+
+            string carrera;
+            Console.WriteLine("Ingrese su carrera");
+            carrera = Console.ReadLine();
+
+            if(carrera == "sistemas")
+            {
+                Console.WriteLine("Bienvenido a la facultad de sistemas");
+
+            } 
+            else
+            {
+                Console.WriteLine("Estamos evaluando que carrera es");
+            }
+
+            Console.ReadLine();
+            
+        }
+    }
+}
