@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema_8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar una nota;
+            //si la nota es menora 11 mostrar el mensaje “DESAPROBADO” de lo contrario mostrar el mensaje“APROBADO”.
+            int nota;
+            Console.WriteLine("Ingrese su nota");
+            nota = int.Parse(Console.ReadLine());
+            if(nota < 11) 
+            {
+                Console.WriteLine("Desaprobado");
+                
+            }
+            else
+            {
+                Console.WriteLine("Aprobado");
+            }
+            Console.ReadLine();
+        }
+    }
+}
