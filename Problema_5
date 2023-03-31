@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar un número entero;
+            //si elnúmero es >= 0 pero <=10 mostrar mensaje “RANGO 1”,
+            //si el número es > 10pero <=20 mostrar mensaje “RANGO 2”.
+            int numero;
+            Console.WriteLine("Ingrese un Número");
+            numero = int.Parse(Console.ReadLine());
+
+            if (numero >=0 & numero<=10)
+            {
+                Console.WriteLine("Rango 1");
+            }
+            else if (numero > 10 & numero <= 20)
+            {
+                Console.WriteLine("Rango 2");
+            }
+            Console.ReadLine();
+        }
+    }
+}
