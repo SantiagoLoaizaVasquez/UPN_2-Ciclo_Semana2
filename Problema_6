@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar dos números y te indique cuales el mayor número ingresado
+            int x, y;
+            Console.WriteLine("Ingrese el primer valor");
+            x = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese el segundo valor");
+            y = int.Parse(Console.ReadLine());
+
+            if (x > y)
+            {
+                Console.WriteLine("El mayor es " + x);
+
+            }
+            else if (y > x)
+            {
+                Console.WriteLine("El mayor es " + y);
+            }
+            else
+            {
+                Console.WriteLine("Los dos tienen el mismo valor");
+            }
+            Console.ReadLine();
+        }
+    }
+}
