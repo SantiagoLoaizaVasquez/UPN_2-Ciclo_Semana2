@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar una categoría;
+            //si es igual “a”mostrar mensaje “CATEGORIA BEBIDAS” si categoría es igual “b” mostrarmensaje “CATEGORIA CARNES”
+
+            string categoria;
+            Console.WriteLine("Elija su categoría si es a o es b ");
+            categoria = Console.ReadLine();
+            if (categoria == "a")
+            {
+                Console.WriteLine("Categoria bebidas");
+            }
+            if(categoria == "b")
+            {
+                Console.WriteLine("Categoria carnes");
+            }
+            Console.ReadLine();
+        }
+    }
+}
