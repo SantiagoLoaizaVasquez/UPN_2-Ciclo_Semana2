@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permite ingresar el sueldo;
+            //si el sueldo es menor a 1250 mostrar el mensaje “SUELDO MINIMO”
+
+            int sueldo;
+            Console.WriteLine("Ingrese su sueldo");
+            sueldo = int.Parse(Console.ReadLine());
+
+            if (sueldo < 1250)
+            {
+                Console.WriteLine("Sueldo Mínimo ");
+            }
+            else
+            {
+                Console.WriteLine("El sueldo es mayor al mínimo");
+            }
+            Console.ReadLine();
+        }
+    }
+}
