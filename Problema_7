@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar un sueldo;
+            //si el sueldo esmayor a 1250 mostrar mensaje “SUELDO REGULAR” de lo contrario mostrarel mensaje “SUELDO BÁSICO”
+            int sueldo;
+            Console.WriteLine("Ungrese su sueldo");
+            sueldo = int.Parse(Console.ReadLine());
+
+            if (sueldo>1250)
+            {
+                Console.WriteLine("Sueldo Regular");
+            }
+            else
+            {
+                Console.WriteLine("Sueldo Básico");
+            }
+            Console.ReadLine();
+        }
+    }
+}
