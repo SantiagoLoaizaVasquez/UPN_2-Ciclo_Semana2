@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar un sub total a pagar,
+            //calcular el IGV= 19% y calcular el monto total a pagar,
+            //si el total es mayor a 1 UITmostrar el mensaje “MONTO SUPERADO”, de lo contrario “MONTO EN ELRANGO”.
+            int subtotal;
+            Console.WriteLine("Ingrese un monto");
+            subtotal =int.Parse(Console.ReadLine());
+            double total = subtotal * (119 / 100);
+            if(total > 4950)
+            {
+                Console.WriteLine("Monto superado");
+            }
+            else
+            {
+                Console.WriteLine("Monto en le rango");
+            }
+            Console.ReadLine();
+        }
+    }
+}
